@@ -1,6 +1,6 @@
 export default {
-  name: "product",
-  title: "Product",
+  name: "featured",
+  title: "Featured",
   type: "document",
   fields: [
     {
@@ -8,6 +8,14 @@ export default {
       title: "Image",
       type: "array",
       of: [{ type: "image" }],
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "featuredImage",
+      title: "FeaturedImage",
+      type: "image",
       options: {
         hotspot: true,
       },

@@ -14,6 +14,7 @@ const styles = {
     backgroundRepeat: "no-repeat",
   },
   logoText: {
+    color: "#616161",
     fontFamily: "Jura",
     marginLeft: "3rem",
   },
@@ -23,6 +24,7 @@ const styles = {
   },
   nav: (isTabletOrMobile: boolean) => ({
     display: isTabletOrMobile ? "none" : "flex",
+    backgroundColor: "#EEEEEE",
   }),
 };
 
@@ -32,9 +34,9 @@ function Navbar() {
   return (
     <NavbarBs
       expand="lg"
-      bg="light"
       variant="light"
       className="position-relative shadow-sm"
+      style={{ backgroundColor: "#EEEEEE" }}
     >
       <Container>
         <NavbarBs.Brand

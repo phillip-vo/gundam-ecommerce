@@ -25,10 +25,10 @@ function Layout({ children }: LayoutProps) {
       </header>
       <Container>
         <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
       </Container>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
