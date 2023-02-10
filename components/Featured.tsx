@@ -52,7 +52,7 @@ function Featured({ featuredProduct }: FeaturedProps) {
             <span style={styles.featuredText}>
               PILOT: {featuredProduct.pilot}
             </span>
-            <Link href={`/product/${featuredProduct.slug.current}`} passHref>
+            <Link href={`/featured/${featuredProduct.slug.current}`} passHref>
               <Button
                 variant="dark"
                 className="mt-3"

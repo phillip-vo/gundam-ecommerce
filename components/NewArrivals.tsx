@@ -3,6 +3,7 @@ import { Accordion } from "./Accordion";
 import { urlFor } from "../libs/client";
 import { Button, Image } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
+import Link from "next/link";
 
 type NewArrivalProps = {
   newArrivalProducts: any;
@@ -16,6 +17,9 @@ function NewArrivals({ newArrivalProducts }: NewArrivalProps) {
   const handleOpenNewArrivalSection = () => {
     setOpenNewArrivalSection(!openNewArrivalSection);
   };
+
+  console.log("newArrivalProducts", newArrivalProducts);
+
   return (
     <div>
       <Accordion
@@ -62,13 +66,15 @@ function NewArrivals({ newArrivalProducts }: NewArrivalProps) {
                   <span style={styles.newArrivalText}>
                     PILOT: {product.pilot}
                   </span>
-                  <Button
-                    variant="dark"
-                    className="mt-3"
-                    style={styles.newArrivalButton}
-                  >
-                    Add
-                  </Button>
+                  <Link href={`/newArrivals/${product.slug.current}`} passHref>
+                    <Button
+                      variant="dark"
+                      className="mt-3"
+                      style={styles.newArrivalButton}
+                    >
+                      Add
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -9,7 +9,7 @@ const styles = {
     color: "#BABABA",
     letterSpacing: "5px",
     height: "50px",
-    backgroundImage: "url(images/arrow-light.png)",
+    backgroundImage: "url(/images/arrow-light.png)",
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
   },
