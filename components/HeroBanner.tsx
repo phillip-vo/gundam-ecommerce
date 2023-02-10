@@ -19,15 +19,6 @@ function HeroBanner({ heroBanner }: HeroBannerProps) {
 }
 
 const styles = {
-  // ctaButton: {
-  //   fontSize: "1.5rem",
-  //   color: "#616161",
-  //   border: "none",
-  //   backgroundColor: "transparent",
-  // },
-  // ctaButtonImage: {
-  //   opacity: ".70",
-  // },
   productButton: {
     width: "150px",
     fontSize: "1.5rem",

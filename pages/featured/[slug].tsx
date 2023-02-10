@@ -39,7 +39,11 @@ const styles = {
   },
 };
 
-const FeatureProductDetails = ({ product }) => {
+type FeatureProductDetailsProps = {
+  product: any;
+};
+
+const FeatureProductDetails = ({ product }: FeatureProductDetailsProps) => {
   const { image, name, details, price, japaneseName, model, series, pilot } =
     product;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

@@ -1,9 +1,6 @@
 import React from "react";
-import Head from "next/head";
-import { Featured, HeroBanner } from "../components";
+import { BestSellers, Featured, HeroBanner, NewArrivals } from "../components";
 import { client } from "../libs/client";
-import NewArrivals from "../components/NewArrivals";
-import BestSellers from "../components/BestSellers";
 
 type HomeProps = {
   products: any;
@@ -18,10 +15,6 @@ const Home = ({
   featuredData,
   newArrivalData,
 }: HomeProps) => {
-  console.log("products:", products);
-  console.log("bannerData:", bannerData);
-  console.log("featured data:", featuredData);
-  console.log("new arrival data:", newArrivalData);
   return (
     <div>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />

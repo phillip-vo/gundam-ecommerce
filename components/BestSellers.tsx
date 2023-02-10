@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Accordion } from "./Accordion";
-import { urlFor } from "../libs/client";
-import { Button, Image } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 import ProductCard from "./ProductCard";
 

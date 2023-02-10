@@ -91,7 +91,12 @@ function Footer() {
       </Container>
       <div style={{ backgroundColor: "#EEEEEE" }}>
         <Container className="d-flex justify-content-between mt-5 py-3">
-          <span>All rights reserved 2022</span>
+          <span>
+            All rights reserved 2022 | Images by{" "}
+            <a href="https://www.saint-ism.com/" style={styles.footerLink}>
+              SAINT-ISM
+            </a>
+          </span>
           <div className="d-flex gap-5">
             <span>Terms</span>
             <span>Privacy</span>
