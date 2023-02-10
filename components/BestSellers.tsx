@@ -33,8 +33,8 @@ function BestSellers({ bestSellerProducts }: BestSellersProps) {
             isTabletOrMobile && "flex-column"
           }`}
         >
-          {bestSellerProducts.map((product: any) => (
-            <ProductCard product={product} />
+          {bestSellerProducts.map((product: any, index: any) => (
+            <ProductCard key={index} product={product} />
           ))}
         </div>
       )}

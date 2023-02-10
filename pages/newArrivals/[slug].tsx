@@ -67,8 +67,9 @@ const NewArrivalProductDetails = ({ product }) => {
             height={isBigScreen ? 385 : 315}
           />
           <div className="d-flex mt-3 gap-2 justify-content-center">
-            {image.map((img, index) => (
+            {image.map((img: any, index: any) => (
               <Image
+                key={index}
                 src={urlFor(image && image[index]).url()}
                 alt={name}
                 width={100}
