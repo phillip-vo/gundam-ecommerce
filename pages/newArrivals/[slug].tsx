@@ -138,7 +138,7 @@ export const getStaticPaths = async () => {
 
   const products = await client.fetch(query);
 
-  const paths = products.map((product) => ({
+  const paths = products.map((product: any) => ({
     params: {
       slug: product.slug.current,
     },
@@ -150,7 +150,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({ params: { slug } }) => {
+export const getStaticProps = async ({ params: { slug } }: any) => {
   const query = `*[_type == "newArrivals" && slug.current == '${slug}'][0]`;
 
   const product = await client.fetch(query);
